@@ -1,0 +1,18 @@
+﻿@page "/form"
+
+@inject HttpClient http
+
+<h2>Ajouter une nouvelle facture</h2>
+<form action="api/invoices" method="post">
+    <span>Numero : </span>
+    <br />
+    <span>Client :</span>
+    <input for="Customer" type="text" placeholder="EPSI" /><br />
+    <span>Date :</span>
+    <input type="date" placeholder="01/01/2020" /><br />
+    <span>Montant réglé :</span>
+    <input for="Amount" type="number" placeholder="123" /><br />
+    <span>Montant du :</span>
+    <input type="number" placeholder="123" /><br />
+    <button type="submit">AJOUTER UNE NOUVELLE FACTURE</button>
+</form>
